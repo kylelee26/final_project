@@ -1,0 +1,21 @@
+@media (max-width : 480px){
+    .User{
+        width :auto;
+        height: auto;
+    }
+    .h3{
+        font-size: 130%;
+    }
+    .h2{
+        font-size: 160%;
+    }
+    .Page{
+        font-size : 150%;
+    }
+    .picture{
+        width : 70%;
+        height: 80% ;
+        margin-left: 15%;
+    }
+}
+

@@ -1,0 +1,29 @@
+@media screen and (max-width : 480px){
+    .context1{
+        color: white;
+        font-size: medium;
+        font-style: bolder;
+    }
+    .context2{
+        font-style: bolder;
+        font-family: 'Times New Roman', Times, serif;
+        align-content: center;
+        margin-left: 40%;
+    }
+    .context3{
+        font-size: 20px;
+        font-style: bolder;
+    }
+    .card1{
+        margin-left:10% ;
+        margin-right: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .card2{
+        margin-left:10% ;
+        margin-right: 10%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
