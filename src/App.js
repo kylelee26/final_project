@@ -13,9 +13,10 @@ import Analytics from 'react-router-ga';
 function  Match() {
     return (
         <Router>
+             <Analytics id="UA-199923396-1">
         <div className = "Match">
             {/*<Link to = "/album">歌手</Link>*/}
-            <Analytics id="UA-199923396-1">
+            
                 <Switch>
                     <Route path = "/" exact component = {Signin}/>
                     <Route path = "/album" component = {Album}/>
@@ -23,9 +24,11 @@ function  Match() {
                     <Route path = "/pricing" component = {Pricing}/>
                     <Route path ="/profile" component={Profile}/>
                 </Switch>
-            </Analytics>
-
+            
+                
         </div>
+         
+        </Analytics>
         </Router>
     );
 }
