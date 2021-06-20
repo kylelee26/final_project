@@ -15,14 +15,14 @@ function  Match() {
         <Router>
         <div className = "Match">
             {/*<Link to = "/album">歌手</Link>*/}
-            <Analytics id="G-KQ2SRPE67R">
-            <Switch>
-                <Route path = "/" exact component = {Signin}/>
-                <Route path = "/album" component = {Album}/>
-                <Route path = "/song" component = {SongApp}/>
-                <Route path = "/pricing" component = {Pricing}/>
-                <Route path ="/profile" component={Profile}/>
-            </Switch>
+            <Analytics id="UA-199923396-1">
+                <Switch>
+                    <Route path = "/" exact component = {Signin}/>
+                    <Route path = "/album" component = {Album}/>
+                    <Route path = "/song" component = {SongApp}/>
+                    <Route path = "/pricing" component = {Pricing}/>
+                    <Route path ="/profile" component={Profile}/>
+                </Switch>
             </Analytics>
 
         </div>
