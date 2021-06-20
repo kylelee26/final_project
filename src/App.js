@@ -15,7 +15,7 @@ function  Match() {
         <Router>
         <div className = "Match">
             {/*<Link to = "/album">歌手</Link>*/}
-            <Analytics id="UA-ANALYTICS-1">
+            <Analytics id="G-KQ2SRPE67R">
             <Switch>
                 <Route path = "/" exact component = {Signin}/>
                 <Route path = "/album" component = {Album}/>
