@@ -4,9 +4,9 @@ import Pricing from './Pricing';
 import Album from './Album';
 import Signin  from './Signin';
 import SongApp from './Song/SongApp';
-import Profile from './Profile';
+import binapp from './binapp';
+import kyleapp from './kyleapp';
 import { BrowserRouter as Router, Switch , Route} from 'react-router-dom';
-import ReactGA from  'react-ga'
 import Analytics from 'react-router-ga';
 
 
@@ -22,7 +22,8 @@ function  Match() {
                     <Route path = "/album" component = {Album}/>
                     <Route path = "/song" component = {SongApp}/>
                     <Route path = "/pricing" component = {Pricing}/>
-                    <Route path ="/profile" component={Profile}/>
+                    <Route path ="/binapp" component={binapp}/>
+                    <Route path ="/kyleapp" component={kyleapp}/>
                 </Switch>
             
                 

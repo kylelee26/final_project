@@ -4,7 +4,7 @@ import './Css/Profile.css'
 import bin from './binbin.jpg'
 
 
-function Profile() {
+/*function Profile() {
     return (
         <div>
             <Link class = "Page" to = "/pricing">
@@ -28,4 +28,4 @@ function Profile() {
 }
 
 
-export default Profile;
+export default Profile;*/

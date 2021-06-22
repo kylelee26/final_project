@@ -150,8 +150,11 @@ export default function Pricing() {
             <Link class = "context" to ="/song">
               我的歌單
             </Link>
-            <Link class = "context" to = "/profile">
-              個人頁
+            <Link class = "context" to = "/binapp">
+              BINBIN個人頁
+            </Link>
+            <Link class = "context" to = "/kyleapp">
+              Kyle個人頁
             </Link>
             <Link class = "context" to = "/">
             登出
