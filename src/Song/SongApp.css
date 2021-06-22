@@ -34,3 +34,18 @@
   color: #1b1b1b;
   font-family: "Covered By Your Grace", cursive;
 }
+
+.App .add-btn {
+  padding: 10px;
+  border-radius: 60%;
+  color: black;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: rgb(43, 228, 114);
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  border: 3px solid black;
+  margin-left: 40%;
+  margin-right: 40%;
+}

@@ -19,12 +19,13 @@ import './Css/Pricing.css';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+      {''}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      </Link>{''}
+      {' 現在時間 : '}
+      {new Date().getHours()}
+      {' : '}
+      {new Date().getMinutes()}
     </Typography>
   );
 }
@@ -75,38 +76,61 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const tiers = [
-  
   {
     title: '毛朋友',
-    price: '30',
+    price: '30USD',
     description: [
       '我神',
-      '我單腳',
       '好啊',
-      
+      '我單腳',
     ],
-    buttonText: '不可以點我',
+    buttonText: '想成為毛朋友請使用Spotify',
     buttonVariant: 'outlined',
   },
+  {
+    title: '毛毛朋友',
+    price: '60USD',
+    description: [
+      '可以聽更多歌',
+      '開啟歌詞功能',
+      '可以享受無廣告服務',
+      
+    ],
+    buttonText: '想成為毛毛朋友請使用Spotify',
+    buttonVariant: 'outlined',
+  },
+  {
+    title: '毛毛毛朋友',
+    price: '90USD',
+    description: [
+      '好聽一直聽',
+      '可以離線收聽',
+      '尊爵不凡皇家音質',
+    ],
+    buttonText: '想成為毛毛毛朋友請使用Spotify',
+    buttonVariant: 'outlined',
+  },
+
 ];
-{/*const footers = [
+
+const footers = [
   {
-    title: 'Company',
-    description: ['Team', 'History', 'Contact us', 'Locations'],
+    title: '毛毛朋友幫最愛聽',
+    description: ['垃圾圖奇還我張恩人', '連志祥'],
   },
   {
-    title: 'Features',
-    description: ['Cool stuff', 'Random feature', 'Team feature', 'Developer stuff', 'Another one'],
+    title: '毛毛兄弟幫最愛聽',
+    description: ['這不是超志祥', '連大包'],
   },
   {
-    title: 'Resources',
-    description: ['Resource', 'Resource name', 'Another resource', 'Final resource'],
+    title: '章魚花枝幫最愛聽',
+    description: ['始祖巨人座標之力', '日不落'],
   },
   {
-    title: 'Legal',
-    description: ['Privacy policy', 'Terms of use'],
+    title: '硬幫幫最愛聽',
+    description: ['無限月讀', '好聽的歌'],
   },
-];*/}
+];
 
 export default function Pricing() {
   const classes = useStyles();
@@ -139,7 +163,7 @@ export default function Pricing() {
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent} class = "context" >
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom >
-          Spotify
+          Superfly
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
           歡迎來到我們的音樂網頁
@@ -178,7 +202,7 @@ export default function Pricing() {
                   </ul>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant={tier.buttonVariant} color="primary">
+                  <Button fullWidth variant={tier.buttonVariant} color="primary" href="https://open.spotify.com/search" target = "blank">
                     {tier.buttonText}
                   </Button>
                 </CardActions>
@@ -188,7 +212,7 @@ export default function Pricing() {
         </Grid>
       </Container>
       {/* Footer */}
-      {/*<Container maxWidth="md" component="footer" className={classes.footer}>
+      {<Container maxWidth="md" component="footer" className={classes.footer}>
         <Grid container spacing={4} justify="space-evenly">
           {footers.map((footer) => (
             <Grid item xs={6} sm={3} key={footer.title}>
@@ -198,9 +222,9 @@ export default function Pricing() {
               <ul>
                 {footer.description.map((item) => (
                   <li key={item}>
-                    <Link href="#" variant="subtitle1" color="textSecondary">
+                    <Button href="https://www.youtube.com/watch?v=zwqwZMYhRGc" target = "blank" variant="subtitle1" color="textSecondary">
                       {item}
-                    </Link>
+                    </Button>
                   </li>
                 ))}
               </ul>
@@ -210,7 +234,7 @@ export default function Pricing() {
         <Box mt={5}>
           <Copyright />
         </Box>
-      </Container>*/}
+      </Container>}
       {/* End footer */}
     </React.Fragment>
   );

@@ -18,16 +18,16 @@ import './Css/Album.css';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+      {''}
       <Link color="inherit" href="https://material-ui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
+      </Link>
+      {' 現在時間 : '}
+      {new Date().getHours()}
+      {' : '}
+      {new Date().getMinutes()}
     </Typography>
   );
 }
-
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -60,8 +60,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
-
 export default function Album() {
   const classes = useStyles();
 
@@ -80,26 +78,18 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
         <div className={classes.heroContent}>
           <Container maxWidth="sm" >
-            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom class = "context2">
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" >
               歌手
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph class = "context3">
+            <Typography variant="h4" align="center" color="textSecondary" >
               這裡有很多很知名的歌手請細細品嘗
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  {/*<Button variant="contained" color="primary">
-                    Main call to action
-                  </Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined" color="primary">
-                    Secondary action
-                  </Button>*/}
+                  {""}
                 </Grid>
               </Grid>
             </div>
@@ -108,30 +98,50 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            
               <Grid item  xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    src = ""
+                    image="https://cdn2.ettoday.net/images/4836/d4836317.jpg"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent} >
                     <Typography gutterBottom variant="h6" component="h2" class = "context3">
-                      羅志祥空幹王
+                      羅志祥AKA空幹王
                     </Typography>
-                    <Typography >
+                    <Typography variant="h6"  color="textSecondary">
                       精武門
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" href = "https://www.youtube.com/watch?v=_GmtUflOQkA" target = "blank">
-                      Listen
+                    <Button size="large" color="primary" href = "https://www.youtube.com/watch?v=_GmtUflOQkA" target = "blank">
+                      立刻聽
                     </Button>
                   </CardActions>
-                  
                 </Card>
+              </Grid>
 
+              <Grid item  xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://obs.line-scdn.net/0h0dQDzTg_b0tsPUQBwdoQHFZrbCRfUXxICAs-SC9TMX8UDn1NUQghJU81Mn1AXSgVAgkkLUg_dHoRCiBPVgsh/w644"
+                    title="Image title"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h6" component="h2" class = "context3">
+                      高爾軒OSN
+                    </Typography>
+                    <Typography  variant="h6"  color="textSecondary">
+                      後悔高中裝很吵的排氣管
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="large" color="primary" href = "https://www.youtube.com/watch?v=HQDDlgGy2hg" target = "blank">
+                      立刻聽
+                    </Button>
+                  </CardActions>
+                </Card>
               </Grid>
 
               <Grid item  xs={12} sm={6} md={4}>
@@ -141,41 +151,33 @@ export default function Album() {
                     image="https://source.unsplash.com/random"
                     title="Image title"
                   />
-                  <CardContent className={classes.cardContent}>
+                  <CardContent className={classes.cardContent} >
                     <Typography gutterBottom variant="h6" component="h2" class = "context3">
-                      高爾軒OSN
+                      CJ最愛
                     </Typography>
-                    <Typography class = "context3">
-                      without you,why you gonna lie
+                    <Typography variant="h6"  color="textSecondary">
+                      猜猜我是誰
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" href = "https://www.youtube.com/watch?v=-ObdvMkCKws" target = "blank">
-                      Listen
+                    <Button size="large" color="primary" href = "https://www.youtube.com/watch?v=D1PvIWdJ8xo" target = "blank">
+                      立刻聽
                     </Button>
                   </CardActions>
-                  
                 </Card>
-                
-
-                
-              </Grid>
-            
-            
+              </Grid>         
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom>
-          Footer
+          真正的音樂只有冠瑋日不落
         </Typography>
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
-          Something here to give the footer a purpose!
+          好聽一直聽!
         </Typography>
         <Copyright />
       </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }

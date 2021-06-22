@@ -21,6 +21,8 @@ function Profile() {
             <h2 class ="h2" align = "center"><a href="https://www.facebook.com/binx.lin" target="blank">冰冰姐的臉書</a></h2>
             <h2 class ="h2" align ="center"><a href ="https://github.com/binxlin" target="blank">冰冰姐的github</a></h2>
             <img src = {bin} alt = "bin" class = "picture" ></img>
+            <img src = {bin} alt = "bin" class = "picture" ></img>
+            <img src = {bin} alt = "bin" class = "picture" ></img>
         </div>
     );
 }
