@@ -53,7 +53,7 @@ function App(props) {
       </button>
       <TextField id="standard-basic" label="" value={todoinput} onChange={(e) => settodoinput(e.target.value) }/>
                 <Button onClick={addtodo}   color="primary" variant="contained" className = "add-btn">
-                  Click
+                  新增歌曲
                 </Button>
                 {todos.map((todo) => (
             <Delete

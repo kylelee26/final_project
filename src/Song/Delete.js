@@ -21,7 +21,7 @@ export default function TodoListItem({ todo, is_in_progress, id }) {
           />
         </ListItem>
 
-        <Button onClick={deleteTodo}>X</Button>
+        <Button onClick={deleteTodo}>刪除</Button>
       </div>
     );
   }
